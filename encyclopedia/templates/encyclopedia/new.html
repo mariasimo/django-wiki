@@ -1,0 +1,32 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %}
+{% if title %}
+{{title}}
+{% else %}
+Add new entry
+{% endif %}
+{% endblock %}
+
+{% block body %}
+{% if errorMessage %}
+<div class="error-message">
+    {{errorMessage}}
+</div>
+{% endif %}
+
+{% if editMode %}
+<form action="{% url 'edit' title %}" method="POST">
+    {% csrf_token %}
+    {{newEntryForm}}
+    <input type="submit">
+</form>
+{% else %}
+<form action="{% url 'new' %}" method="POST">
+    {% csrf_token %}
+    {{newEntryForm}}
+    <input type="submit">
+</form>
+{% endif %}
+
+{% endblock%}

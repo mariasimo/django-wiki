@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+code {
+    white-space: pre;
+}
+
+label{
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+input:not([type="submit"]),textarea {
+    display: block;
+    margin-block-end: 1rem;
+    width: 80%;
+}
+
+
+.main {
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+.error-message {
+    margin-block-end: 1rem;
+    padding: 1rem;
+    border: 1px solid #ff7f50;
+    background-color: #ff7f5050;
+}
+
+.edit {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.content {
+    margin-block-end: 2rem;
+}
